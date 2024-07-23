@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="login.css">
+    
+</head>
+
+<body>
+
+    <div>
+
+        <input onchange="result1(this)" id="input1" type="text" placeholder="Enter Your First Name" value="">
+
+        <p id="fname"></p>
+
+
+
+        <input onchange="result2(this)" id="input2" type="text" placeholder="Enter Your Last Name" value="">
+
+        <p id="lname"></p>
+
+
+
+        <button class="btn btn-primary" onclick="myfunction()"> replace document </button>
+
+    </div>
+
+
+
+
+
+
+
+    <script>
+
+        function result1(x) {
+            let a;
+            a = document.getElementById("input1").value;
+
+            document.getElementById("fname").innerHTML = (a !== "neda") ? "The entered value is not correct" : "The entered value is correct";
+        }
+
+
+        function result2(x) {
+            let b;
+            b = document.getElementById("input2").value;
+
+            document.getElementById("lname").innerHTML = (b !== "shadkam") ? "The entered value is not correct" : "The entered value is correct";
+        }
+
+
+    </script>
+
+    <script>
+
+        function myfunction() {
+
+            location.replace("./sofal.html");
+        }
+    </script>
+
+
+
+</body>
+
+</html>

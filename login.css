@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'yekan';
+    src: url('./assets/fonts/yekan/BYekan.eot');
+    src: url('./assets/fonts/yekan/BYekan.svg');
+    src: url('./assets/fonts/yekan/BYekan.ttf');
+    src: url('./assets/fonts/yekan/BYekan.woff');
+}
+
+* {
+    font-family: 'yekan';
+}
+
+
+
+
+
+div {
+    text-align: center;
+    width: 35%;
+    padding: 2.5%;
+    margin-left: 30%;
+    margin-top: 25vh;
+    background-color: rgb(248, 248, 248);
+    border: 4px dotted #8c0048;
+    border-radius: 10px;
+}
+
+
+
+input {
+    width: 60%;
+    background-color: #ebebeb;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+}
+
+button {
+    background-color: #2db193;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid 2db193;
+    border-radius: 5px;
+}

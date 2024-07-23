@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="sofal.css">
+
+    <title>فروش محصولات سفالی</title>
+
+    <!-- <meta name="viewport" content="initial-scale" width="device-width" /> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+    
+        @font-face {
+            font-family: 'yekan';
+            src: url('assets/fonts/yekan/BYekan.eot') format('eot'), url('assets/fonts/yekan/BYekan.eot?iefix') format('eot');
+            src: url('assets/fonts/yekan/BYekan.svg') format('svg');
+            src: url('assets/fonts/yekan/BYekan.ttf') format('truetype');
+            src: url('assets/fonts/yekan/BYekan.woff') format('woff');
+
+        }
+
+        * {
+            font-family: 'yekan';
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+
+            <span>فروش محصولات سفالی</span>
+
+            <span class="material-icons"> search </span>
+
+            <span class="material-icons"> store </span>
+
+            <span> <a href="./login.html">ورود / عضویت</a></span>
+
+            
+
+
+            <div>
+
+                <span> <a href="https://">درباره ما</a> </span>
+
+                <span> <a href="https://">سایت ها</a> </span>
+
+                <span> <a href="https://">مقالات</a> </span>
+
+                <span> <a href="https://">آلبوم عکس ها</a> </span>
+
+                <span> <a href="https://">ویدیو ها</a> </span>
+
+
+            </div>
+
+        </nav>
+
+        <div class="big-photo">
+
+            <img id="big-photo" src="./assets/images/6dfdacd5ab9e5bf4f1b1825062b0f09773dffa87_1661365667.jpg">
+        </div>
+
+    </header>
+
+    <main>
+
+
+        <span id="list"></span>
+
+
+
+        <div id="main-bottom">
+
+            <span class="bime shabih">
+
+                <span> <img src="https://sofaland.ir/wp-content/uploads/2023/03/ic2-1.png"></span>
+
+                <span>بیمه و بسته بندی ویژه</span>
+
+            </span>
+
+            <span class="pardakht shabih">
+
+                <span> <img src="https://sofaland.ir/wp-content/uploads/2019/07/22414818.svg"></span>
+
+                <span>پرداخت آنلاین</span>
+
+            </span>
+
+            <span class="poshtibany shabih">
+
+                <span> <img src="https://sofaland.ir/wp-content/uploads/2019/07/a9286d2f.svg"></span>
+
+                <span>پشتیبانی ۲۴ ساعته</span>
+
+            </span>
+
+            <span class="tahvil shabih">
+
+                <span> <img src="https://sofaland.ir/wp-content/uploads/2019/07/8f570b58.svg"></span>
+
+                <span>تحویل ایمن</span>
+
+            </span>
+
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <span class="section1">
+
+            <ul>
+
+                <li><i class="material-icons">place</i> آدرس : تهران کیانشهر خیابان ابرهیمی</li>
+
+                <li><i class="material-icons">phone</i>امور مشتریان   09037445648   -  02144962188  </li>
+
+            </ul>
+
+        </span>
+
+        <span class="section2">
+
+            <ul>
+
+                <li> درباره ما</li>
+
+                <li> تماس با ما</li>
+
+                <li> قوانین سایت </li>
+
+                <li> سوالات متداول</li>
+
+            </ul>
+
+        </span>
+
+        <span class="section3">
+
+            <ul>
+
+                <li>پیگیر سفارشات من</li>
+
+                <li> سبد خرید</li>
+
+                <li> ورود </li>
+
+                <li>تاریخچه سفارش ها</li>
+
+            </ul>
+
+        </span>
+
+        <span class="section4">
+
+            <ul>
+
+                <li> روش های پرداخت</li>
+
+                <li> تضمین بازگشت پول</li>
+
+                <li>محصول بازگشتی</li>
+
+                <li> مرکز پشتیبانی</li>
+
+            </ul>
+
+        </span>
+
+    </footer>
+
+
+    <script>
+
+        class Products {
+            constructor(name, img, cost) {
+                this.name = name;
+                this.img = img;
+                this.cost = cost;
+            }
+        }
+
+
+        const myProducts = [
+            new Products('دیوارکوب زمینه آبی', './assets/images/448824619709f5bbdb79461481085c091b4cf5b6_1601485630-e1658214498113.jpg', 150000),
+            new Products('دیوارکوب دوتایی طرح سنتی', './assets/images/bUTIglvm7kODCvxKEdK3qxkusYHlRDWO5mt6vX7b.jpeg_512X512X70.jpg', 300000),
+            new Products('دیوارکوب طرح گوچ', './assets/images/nody--1636091377.jpg', 140000),
+            new Products('دیوارکوب زمینه سفید', './assets/images/sofal.jpg', 180000),
+            new Products('نلبکی طرح طاووس', './assets/images/DSC09545-244x365.jpg', 100000),
+            new Products('کاسه استوانه ای', './assets/images/DSC09570-244x365.jpg', 190000),
+            new Products('کاسه استوانه ای طرح طاووس', './assets/images/DSC09650-244x365.jpg', 200000),
+            new Products('ظرف استوانه ای', './assets/images/DSC09707-244x365.jpg', 160000),
+            new Products('سرویس چینی', './assets/images/03_2_500x500.webp', 150000),
+            new Products('سرویس چینی', './assets/images/1111_500x500.webp', 360000),
+            new Products('سرویس چینی', './assets/images/1_96_500x500.webp', 280000),
+            new Products('1ماگ', './assets/images/DSC01934-244x365.jpg', 60000),
+            new Products('2ماگ', './assets/images/DSC01936-244x365.jpg', 60000),
+            new Products('3ماگ', './assets/images/DSC01940-244x365.jpg', 80000),
+            new Products('4ماگ', './assets/images/DSC01943-244x365.jpg', 40000),
+            new Products('5ماگ', './assets/images/DSC01946-244x365.jpg', 70000),
+            new Products('6ماگ', './assets/images/DSC01929-244x365.jpg', 50000),
+        ];
+
+
+        myProducts.forEach(x => {
+            document.getElementById("list").innerHTML +=
+
+                ` <span class="same ">
+
+                <span class="img"> <img src="${x.img}">  </span>
+
+                <span class="name"> ${x.name} </span>
+
+                <span class="cost"> ${x.cost} تومان </span>
+
+                <button> خرید </button>
+
+            </span>`
+        });
+
+    </script>
+
+
+</body>
+
+</html>
